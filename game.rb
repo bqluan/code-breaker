@@ -32,7 +32,3 @@ class Game
     @secret.include?(guess[index]) && !exact_match?(guess, index)
   end
 end
-
-if __FILE__ == $0
-  Game.new(STDOUT).start
-end
